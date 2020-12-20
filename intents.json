@@ -1,0 +1,1192 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :)",
+        "Hello",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    
+    {
+      "tag": "who",
+      "patterns": ["Who are you", "What is your name"],
+      "responses": ["I am a bot", "I am a chatbot"]
+    },
+      
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    
+    {
+            "tag" : "data structures",
+            "patterns" :[
+                "What is data structures ?",
+                "Explain data structures?"
+            ],
+            "responses" :[
+                "A data structure is a particular way of organizing data in a computer so that it can be used effectively."
+            ]
+        },
+        {
+            "tag" : "types of data structures",
+            "patterns" :[
+                "What are different types of data structures ?",
+                "Types of data structures?"
+            ],
+            "responses" :[
+                "There are generally four form of data strucutres- \n1.Linear: arrays, lists  \n2.Tree: binary, heaps, space partitioning etc. \n3.Hash: distributed hash table, hash tree etc. \n4.Graphs: decision, directed, acyclic etc."
+
+            ]
+        },
+        {
+            "tag" : "linear data structures",
+            "patterns" :[
+                "What is linear data structures ?",
+                "Explain linear data structures?"
+            ],
+            "responses" :[
+                "A Linear data structure have data elements arranged in sequential manner and each member element is connected to its previous and next element.\nThis connection helps to traverse a linear data structure in a single level and in single run. \nSuch data structures are easy to implement as computer memory is also sequential. \nExamples of linear data structures are List, Queue, Stack, Array etc."
+            ]
+        },
+        {
+            "tag" : "array",
+            "patterns" :[
+                "What is array ?",
+                "Explain array?"
+            ],
+            "responses" :[
+                "An array is a data structure that contains a group of elements. \nTypically these elements are all of the same data type, such as an integer or string. \nArrays are commonly used in computer programs to organize data so that a related set of values can be easily sorted or searched."
+            ]
+        },
+        {
+            "tag" : "example of array",
+            "patterns" :[
+                "Give me an example of array.",
+                "Example of array.",
+                "How to initialise an array?"
+            ],
+            "responses" :[
+                "int a[5] = {19, 10, 8, 17, 9} \nHere, a[0]= 19, a[1]= 10, a[2]= 8, a[3]= 17, a[4]= 9"
+                 
+            ]
+        },
+        {
+            "tag" : "application of array",
+            "patterns" :[
+                "What are the application of array?",
+                "Application of array.",
+                "Where are array used?",
+                "What are the use of array?"
+            ],
+            "responses" :[
+                "1.Arrays are used to implement mathematical vectors and matrices, as well as other kinds of rectangular tables.\n2.Arrays are used to implement other data structures, such as lists, heaps, hash tables, deques, queues and stacks."
+                 
+            ]
+        },
+        {
+            "tag" : "stack",
+            "patterns" :[
+                "What is stack ?",
+                "Explain stack?"
+            ],
+            "responses" :[
+              "Stack is a linear data structure which follows a particular order in which the operations are performed. \nThe order may be LIFO(Last In First Out) or FILO(First In Last Out).\nIn stack elements are inserted as well as get removed from only one end.\nThere are two ways to implement a stack:\n1.Using array\n2.Using linked list"
+            ]
+        },
+        {
+            "tag" : "example or inbuilt library of stack",
+            "patterns" :[
+                "Give me an example of stack.",
+                "Example of stack.",
+                "Inbuilt library of stack.",
+                "What is the inbuilt library of stack?"
+            ],
+            "responses" :[
+                "stack <int> s;\ns.push(10);  \ns.push(30); \ns.push(20); \ns.push(5); \ns.push(1); \nThis will create stack named s with elements 10, 30, 20, 5, 1 in C++"      
+            ]
+        },
+        {
+            "tag" : "application of stack",
+            "patterns" :[
+                "What are the application of stack?",
+                "Application of stack.",
+                "Where are stacks used?",
+                "What are the use of stack?"
+            ],
+            "responses" :[
+                "1.The stack can be used to convert some infix expression into its postfix equivalent, or prefix equivalent and also to evaluate them. \n2.Stacks are also used in backtracking process. \n3.Used in many algorithms like Tower of Hanoi, tree traversals, stock span problem, histogram problem.\n4.Forward and backward feature in web browsers.\n5.Examples of stacks in real life are -\na. The stack of trays in a cafeteria \nb. A driveway that is only one car wide"
+                 
+            ]
+        },
+        {
+            "tag" : "inbuilt member function of stack",
+            "patterns" :[
+                "What are inbuilt member function of stack?",
+                "Inbuilt member function of stack."
+            ],
+            "responses" :[
+                "Mainly the following functions are performed in the stack:\n1. Push: Adds an item in the stack. If the stack is full, then it is said to be an Overflow condition.\n2. Pop: Removes an item from the stack. The items are popped in the reversed order in which they are pushed. \nIf the stack is empty, then it is said to be an Underflow condition.\n3. Peek or Top: Returns top element of stack.\n4. isEmpty: Returns true if stack is empty, else false."  
+            ]
+        },
+        {
+            "tag" : "queue",
+            "patterns" :[
+                "What is queue ?",
+                "Explain queue?"
+            ],
+            "responses" :[
+              "A Queue is a linear structure which follows a particular order in which the operations are performed. \nThe order is First In First Out (FIFO). \nA good example of a queue is any queue of consumers for a resource where the consumer that came first is served first. \nThe difference between stacks and queues is in removing. In a stack we remove the item the most recently added; \nin a queue, we remove the item the least recently added."
+            ]
+        },
+        {
+            "tag" : "example or inbuilt library of queue",
+            "patterns" :[
+                "Give me an example of queue.",
+                "Example of queue.",
+                "What is the inbuilt library of queue?",
+                "Inbuilt library of queue."
+            ],
+            "responses" :[
+                "queue <int> gquiz; \ngquiz.push(10); \ngquiz.push(20); \ngquiz.push(30); \nThis will create queue named gquiz with elements 10, 20, 30 in C++"
+ 
+                 
+            ]
+        },
+        {
+            "tag" : "application of queue",
+            "patterns" :[
+                "What are the application of queue?",
+                "Application of queue.",
+                "Where are queue used?",
+                "What are the use of queue?"
+            ],
+            "responses" :[
+                "1.Serving requests on a single shared resource, like a printer, CPU task scheduling etc.\n2.In real life scenario, Call Center phone systems uses Queues to hold people calling them in an order, until a service representative is free.\n3.Handling of interrupts in real-time systems. The interrupts are handled in the same order as they arrive i.e First come first served."
+                 
+            ]
+        },
+        {
+            "tag" : "inbuilt member function of queue",
+            "patterns" :[
+                "What are inbuilt member function of queue?",
+                "Inbuilt member function of queue."
+            ],
+            "responses" :[
+                "The functions supported by queue are :\n1.empty() – Returns whether the queue is empty.\n2.size() – Returns the size of the queue.\n3.queue::front() and queue::back() in C++ STL– front() function returns a reference to the first element of the queue. \nback() function returns a reference to the last element of the queue.\n4.push(g) and pop() – push() function adds the element ‘g’ at the end of the queue. \npop() function deletes the first element of the queue."
+
+ 
+                 
+            ]
+        },
+        {
+            "tag" : "linked list",
+            "patterns" :[
+                "What is linked list?",
+                "Explain linked list?"
+            ],
+            "responses" :[
+              "A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. \nThe elements in a linked list are linked using pointers. \nThere are 3 different implementations of Linked List available, they are\n1. Singly Linked List\n2. Doubly Linked List\n3. Circular Linked List"
+            ]
+        },
+        {
+            "tag" : "example or inbuilt library of linked list",
+            "patterns" :[
+                "Give me an example of linked list.",
+                "Example of linked list.",
+                "What is the inbuilt library of linked list?",
+                "Inbuilt library of linked list."
+            ],
+            "responses" :[
+                  
+                "list <int> ll; \nll.push_back(10);\nll.push_back(20);\nll.push_back(30); \nThis will create linked list named ll with elements 10, 20, 30 in C++."
+                     
+            ]
+        },
+        {
+            "tag" : "application of linked list",
+            "patterns" :[
+                "What are the application of linked list?",
+                "Application of linked list.",
+                "Where are linked list used?",
+                "What are the use of linked list?"
+            ],
+            "responses" :[
+                "1.Linked lists are used to implement stacks, queues, graphs, etc.\n2.Linked lists let you insert elements at the beginning and end of the list.\n3.In Linked Lists we don't need to know the size in advance."
+                 
+            ]
+        },
+        {
+            "tag" : "inbuilt member function of linked list",
+            "patterns" :[
+                "What are inbuilt member function of linked list?",
+                "Inbuilt member function of linked list."
+            ],
+            "responses" :[
+                "The functions supported by list are :\n1.begin()      -  Return iterator to beginning (public member function)\n2.end()        -  Return iterator to end (public member function ).\n3.size()       -  Return size (public member function ) \n4.push_front() -  Insert element at beginning (public member function ) \n5.pop_front()  -  Delete first element (public member function ) \n6.push_back()  -  Add element at the end (public member function )\n7.pop_back()   -  Delete last element (public member function ) \n8.insert()     -  Insert elements (public member function ) \n9.erase()      -  Erase elements (public member function )"
+
+                                   
+            ]
+        },
+        {
+            "tag" : "doubly linked list",
+            "patterns" :[
+                "What is doubly linked list?",
+                "Explain doubly linked list?",
+                "Advantages of doubly linked list over singly linked list."
+            ],
+            "responses" :[
+              "A Doubly Linked List (DLL) contains an extra pointer, typically called previous pointer,\ntogether with next pointer and data which are there in singly linked list.\nAdvantages over singly linked list :\n1. A DLL can be traversed in both forward and backward direction.\n2. The delete operation in DLL is more efficient if pointer to the node to be deleted is given.\n3. We can quickly insert a new node before a given node.\nIn singly linked list, to delete a node, pointer to the previous node is needed."     
+
+            ]
+        },
+        {
+            "tag" : "circular linked list",
+            "patterns" :[
+                "What is circular linked list?",
+                "Explain circular linked list?",
+                "Advantages of circular linked list over singly linked list."
+            ],
+            "responses" :[
+              "Circular linked list is a linked list where all nodes are connected to form a circle.\nThere is no NULL at the end. A circular linked list can be a singly circular linked list or doubly circular linked list.\nAdvantages of Circular Linked Lists:\n1. Any node can be a starting point. We can traverse the whole list by starting from any point.\nWe just need to stop when the first visited node is visited again.\n2. Useful for implementation of queue.\nWe can maintain a pointer to the last inserted node and front can always be obtained as next of last.\n3. Circular lists are useful in applications to repeatedly go around the list. \n4. Circular Doubly Linked Lists are used for implementation of advanced data structures like Fibonacci Heap."
+
+            ]
+        },
+        {
+            "tag" : "tree data structure",
+            "patterns" :[
+                "What is tree data structure?",
+                "Explain tree data structure?"
+            ],
+            "responses" :[
+               "A tree data structure can be defined recursively as a collection of nodes (starting at a root node)\nwhere each node is a data structure consisting of a value, together with a list of references to nodes\nwith the constraints that no reference is duplicated, and none points to the root.\nA node is a structure which may contain a value or condition, or represent a separate data structure."
+            ]
+        },
+        {
+            "tag" : "application of tree",
+            "patterns" :[
+                "What are the application of tree?",
+                "Application of tree.",
+                "Where are tree used?",
+                "What are the use of tree?"
+            ],
+            "responses" :[
+                         "1.One reason to use trees might be because you want to store information that naturally forms a hierarchy. \nFor example, the file system on a computer.\nwe can search for a given key in moderate time (quicker than Linked List and slower than arrays).\n2.Self-balancing search trees like AVL and Red-Black trees guarantee an upper bound of O(Logn) for search.\n3.We can insert/delete keys in moderate time (quicker than Arrays and slower than Unordered Linked Lists).\nSelf-balancing search trees like AVL and Red-Black trees guarantee an upper bound of O(Logn) for insertion/deletion.\n4.Pointer implementation of trees don’t have an upper limit on number of nodes as nodes are linked using pointers."
+                 
+            ]
+        },
+        {
+            "tag" : "binary tree",
+            "patterns" :[
+                "What is binary tree?",
+                "Explain binary tree?"
+            ],
+            "responses" :[
+              "A tree whose elements have at most 2 children is called a binary tree.\nSince each element in a binary tree can have only 2 children, we typically name them the left and right child.\nA Binary Tree node contains following parts.\n1.Data\n2.Pointer to left child\n3.Pointer to right child"
+            ]
+        },
+        {
+            "tag" : "application of binary tree",
+            "patterns" :[
+                "What are the application of binary tree?",
+                "Application of binary tree.",
+                "Where are binary tree used?",
+                "What are the use of binary tree?"
+            ],
+            "responses" :[
+                       "Applications of binary trees:\n1.Binary Search Tree - Used in many search applications where data is constantly entering/leaving.\nsuch as the map and set objects in many languages' libraries.\n2.Binary Space Partition - Used in almost every 3D video game to determine what objects need to be rendered.\n3.Binary Tries - Used in almost every high-bandwidth router for storing router-tables.\n4.Hash Trees - used in p2p programs and specialized image-signatures in which a hash needs to be verified.\n5.Heaps - Used in implementing efficient priority-queues"
+                 
+            ]
+        },
+        {
+            "tag" : "heap",
+            "patterns" :[
+                "What is heap?",
+                "Explain heap?"
+            ],
+            "responses" :[
+              "A Heap is a special Tree-based data structure in which the tree is a complete binary tree. \nGenerally, Heaps can be of two types:\n1.Max-Heap: In a Max-Heap the key present at the root node must be greatest among the keys present at all of it’s children.\nThe same property must be recursively true for all sub-trees in that Binary Tree.\n2.Min-Heap: In a Min-Heap the key present at the root node must be minimum among the keys present at all of it’s children.\nThe same property must be recursively true for all sub-trees in that Binary Tree."
+            ]
+        },
+        {
+            "tag" : "application of heaps",
+            "patterns" :[
+                "What are the application of heaps?",
+                "Application of heaps.",
+                "Where are heaps used?",
+                "What are the use of heaps?"
+            ],
+            "responses" :[
+                       "There are two main applications of heap trees:\n1. Sorting using Heap Tree (Heap sort)\n2. Priority Queue implementation using Heap Tree."
+                 
+            ]
+        },
+        {
+            "tag" : "Hash map",
+            "patterns" :[
+                "What is hashmap or hashtable?",
+                "Explain hashmap or hashtable?"
+            ],
+            "responses" :[
+              "Hash table (also, hash map) is a data structure that basically maps keys to values.\nA hash table uses a hash function to compute an index into an array of buckets or slots \nfrom which the corresponding value can be found."
+            ]
+        },
+        {
+            "tag" : "graph",
+            "patterns" :[
+                "What is graph?",
+                "Explain graph?"
+            ],
+            "responses" :[
+              "A Graph is a non-linear data structure consisting of nodes and edges.\nThe nodes are sometimes also referred to as vertices and the edges \nare lines or arcs that connect any two nodes in the graph. More formally a Graph can be defined as,\nA Graph consists of a finite set of vertices(or nodes) and set of Edges which connect a pair of nodes."
+            ]
+        },
+        {
+            "tag" : "application of graph",
+            "patterns" :[
+                "What are the application of graph?",
+                "Application of graph.",
+                "Where are graph used?",
+                "What are the use of graph?"
+            ],
+            "responses" :[
+                "1. In Computer science graphs are used to represent the flow of computation.\n2. Google maps uses graphs for building transportation systems, where intersection of two(or more)\nroads are considered to be a vertex and the road connecting two vertices is considered to be an edge,\nthus their navigation system is based on the algorithm to calculate the shortest path between two vertices.\n3. In Facebook, users are considered to be the vertices and if they are friends then there is an edge running between them. \nFacebook’s Friend suggestion algorithm uses graph theory. Facebook is an example of undirected graph.\n4. In World Wide Web, web pages are considered to be the vertices. \nThere is an edge from a page u to other page v if there is a link of page v on page u.\nThis is an example of Directed graph. It was the basic idea behind Google Page Ranking Algorithm.\n5. In Operating System, we come across the Resource Allocation Graph where each process and resources are considered to be\nvertices. Edges are drawn from resources to the allocated process, or from requesting process to the requested resource.\nIf this leads to any formation of a cycle then a deadlock will occur."
+            ]
+        },
+      {
+          "tag": "searching algorithm", 
+          "patterns": [
+              "What is a searching algorithm?", 
+              "Explain searching algorithm."
+          ], 
+          "responses": [
+              "Searching Algorithms are designed to check for an element or retrieve an element from any data structure where it is stored."
+          ]
+      }, 
+      {
+          "tag": "types of searching algorithms", 
+          "patterns": [
+              "What are different types of searching algorithms?", 
+              "Types of searching algorithms?"
+          ], 
+          "responses": [
+              "Searching algorithms are generally classified into two categories:- Sequential search and Interval search."]
+      }, 
+      {
+          "tag": "sequential search", 
+          "patterns": [
+              "What is sequential search?", 
+              "Explain sequential search."
+          ], 
+          "responses": [
+              "In this, the list or array is traversed sequentially and every element is checked. For example: Linear Search."]
+      }, 
+      {
+          "tag": "interval search", 
+          "patterns": [
+              "What is interval search?", 
+              "Explain interval search."
+          ], 
+          "responses": [
+              "These algorithms are specifically designed for searching in sorted data-structures. These type of searching algorithms are much more efficient than Linear Search as they repeatedly target the center of the search structure and divide the search space in half. For Example: Binary Search."]
+      }, 
+      {
+          "tag": "some searching algorithms", 
+          "patterns": [
+              "Name some searching algorithms.", 
+              "Tell some of the searching algorithms.", 
+              "Give some searching algorithms."
+          ], 
+          "responses": [
+              "Linear search,Binary search,Jump search,Interpolation search,Exponential search."]
+      }, 
+      {
+          "tag": "linear search", 
+          "patterns": [
+              "What is linear search?", 
+              "What to do in linear search?", 
+              "How to proceed in linear search?"
+          ], 
+          "responses": ["Start from the leftmost element of arr[] and one by one compare x with each element of arr[].If x matches with an element, return the index.If x doesn't match with any of elements, return -1."]
+      }, 
+      {
+          "tag": "time complexity of linear search", 
+          "patterns": [
+              "What is the time complexity of linear search?", 
+              "Tell me the time complexity of linear search?"
+          ], 
+          "responses": ["The time complexity of linear search is O(n)."]
+      }, 
+      {"tag": "space complexity of linear search", 
+       "patterns": [
+           "What is the space complexity of linear search?", 
+           "Tell me the space complexity of linear search?"
+       ], 
+       "responses": ["The space complexity of linear search is O(1)."]
+      }, 
+      {
+          "tag": "example of linear search", 
+          "patterns": [
+              "Give me an example of linear search.", 
+              "An example of linear search?"
+          ], 
+          "responses": [
+              "Input : arr[] = {10, 20, 80, 30, 60, 50, 110, 100, 130, 170} \nx = 110;\nOutput : 6"
+          ]
+      }, 
+      {
+          "tag": "binary search", 
+          "patterns": [
+              "What is binary search?", 
+              "What to do in binary search?", 
+              "How to proceed in binary search?"
+          ], 
+          "responses": ["Search a sorted array by repeatedly dividing the search interval in half. Begin with an interval covering the whole array. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half. Otherwise narrow it to the upper half. Repeatedly check until the value is found or the interval is empty."]
+      }, 
+      {
+          "tag": "time complexity of binary search", 
+          "patterns": [
+              "What is the time complexity of binary search?", 
+              "Tell me the time complexity of binary search?"
+          ], 
+          "responses": ["The time complexity of binary search is O(Log n)."]
+      }, 
+      {
+          "tag": "space complexity of binary search", 
+          "patterns": [
+              "What is the space complexity of binary search?", 
+              "Tell me the space complexity of binary search?"
+          ], 
+          "responses": ["The space complexity of binary search is O(1)."]
+      }, 
+      {
+          "tag": "example of binary search", 
+          "patterns": [
+              "Give me an example of binary search.", 
+              "An example of binary search?"
+          ], 
+          "responses": [
+              "Input : arr[] = {10, 20, 30, 60, 110, 130, 170}\nx = 110;\nOutput : 4"
+          ]
+      }, 
+      {
+          "tag": "jump search", 
+          "patterns": [
+              "What is jump search?", 
+              "What to do in jump search?", 
+              "How to proceed in jump search?"
+          ], 
+          "responses": ["Jump Search is a searching algorithm for sorted arrays. The basic idea is to check fewer elements (than linear search) by jumping ahead by fixed steps or skipping some elements in place of searching all elements."]
+      }, 
+      {
+          "tag": "time complexity of jump search", 
+          "patterns": [
+              "What is the time complexity of jump search?", 
+              "Tell me the time complexity of jump search?"
+          ], 
+          "responses": ["The time complexity of jump search is O(n).", 
+                        "The time complexity of Jump Search is between Linear Search ( ( O(n) ) and Binary Search ( O(Log n))."
+                       ]
+      }, 
+      {
+          "tag": "space complexity of jump search", 
+          "patterns": [
+              "What is the space complexity of jump search?", 
+              "Tell me the space complexity of jump search?"
+          ], 
+          "responses": ["The space complexity of jump search is O(1)."]
+      }, 
+      {
+          "tag": "example of jump search", 
+          "patterns": [
+              "Give me an example of jump search.", 
+              "An example of jump search?"
+          ], 
+          "responses": [
+              "array: (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610). Length of the array is 16. Jump search will find the value of 55 with the following steps assuming that the block size to be jumped is 4.\nSTEP 1: Jump from index 0 to index 4;\nSTEP 2: Jump from index 4 to index 8;\nSTEP 3: Jump from index 8 to index 12;\nSTEP 4: Since the element at index 12 is greater than 55 we will jump back a step to come to index 8.\nSTEP 5: Perform linear search from index 8 to get the element 55."
+          ]
+      }, 
+      {
+          "tag": "interpolation search", 
+          "patterns": [
+              "What is interpolation search?", 
+              "What to do in interpolation search?", 
+              "How to proceed in interpolation search?"
+          ], 
+          "responses": [
+              "Interpolation search is an improved variant of binary search. This search algorithm works on the probing position of the required value. For this algorithm to work properly, the data collection should be in a sorted form and equally distributed."
+          ]
+      }, 
+      {
+          "tag": "time complexity of interpolation search", 
+          "patterns": [
+              "What is the time complexity of interpolation search?", 
+              "Tell me the time complexity of interpolation search?"
+          ], 
+          "responses": ["If elements are uniformly distributed, then O (log log n)). In worst case it can take upto O(n)."]
+      }, 
+      {
+          "tag": "space complexity of interpolation search", 
+          "patterns": [
+              "What is the space complexity of interpolation search?", 
+              "Tell me the space complexity of interpolation search?"
+          ], 
+          "responses": ["The space complexity of interpolation search is O(1)."]
+      }, 
+      {
+          "tag": "example of interpolation search", 
+          "patterns": [
+              "Give me an example of interpolation search.", 
+              "An example of interpolation search?"
+          ], 
+          "responses": [
+              "Input : arr[] = {10, 20, 30, 60, 110, 130, 170}\nx = 110;\nOutput : 4"
+          ]
+      }, 
+      {
+          "tag": "formula of interpolation search", 
+          "patterns": [
+              "What formula is used in interpolation search?", 
+              "Tell the formula of interpolation search!", 
+              "Give the interpolation search formula"
+          ], 
+          "responses": [
+              "The idea of formula is to return higher value of poswhen element to be searched is closer to arr[hi]. And smaller value when closer to arr[lo]\npos = lo + [ (x-arr[lo])*(hi-lo) / (arr[hi]-arr[Lo]) ]\narr[] ==> Array where elements need to be searched\nx     ==> Element to be searched\nlo    ==> Starting index in arr[]\nhi    ==> Ending index in arr[]"
+          ]
+      }, 
+      {
+          "tag": "exponential search", 
+          "patterns": [
+              "What is exponential search?", 
+              "What to do in exponential search?", 
+              "How to proceed in exponential search?"
+          ], 
+          "responses": [
+              "Exponential search involves two steps:\n1.  Find range where element is present.\n2.  Do Binary Search in above found range.", 
+              "The idea is to start with subarray size 1, compare its last element with x, then try size 2, then 4 and so on until last element of a subarray is not greater. Once we find an index i (after repeated doubling of i), we know that the element must be present between i/2 and i "]
+      }, 
+      {
+          "tag": "time complexity of exponential search", 
+          "patterns": [
+              "What is the time complexity of exponential search?", 
+              "Tell me the time complexity of exponential search?"
+          ], 
+          "responses": ["The time complexity of exponential search is O(Log n)."]
+      }, 
+      {
+          "tag": "space complexity of exponential search", 
+          "patterns": [
+              "What is the space complexity of exponential search?", 
+              "Tell me the space complexity of exponential search?"
+          ], 
+          "responses": ["The space complexity of exponential search is O(1)."]
+      }, 
+      {
+          "tag": "example of exponential search", 
+          "patterns": ["Give me an example of exponential search.", 
+                       "An example of exponential search?"
+          ], 
+          "responses": [
+              "Input : arr[] = {10, 20, 30, 60, 110, 130, 170}\nx = 110;\nOutput : 4"
+          ]
+      }, 
+      {
+          "tag": "applications of exponential search", 
+          "patterns": [
+              "What are the applications of exponential search?", 
+              "Give some applications of exponential search.", 
+              "Tell me some applications of exponential search."
+          ], 
+          "responses": ["Exponential Binary Search is particularly useful for unbounded searches, where size of array is infinite.", "It works better than Binary Search for bounded arrays, and also when the element to be searched is closer to the first element."]
+      }, 
+      {
+          "tag": "sorting algorithm", 
+          "patterns": [
+              "What is a sorting algorithm?", 
+              "Explain sorting algorithm."
+          ], 
+          "responses": ["A Sorting Algorithm is used to rearrange a given array or list elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of element in the respective data structure."]
+      }, 
+      {
+          "tag": "some sorting algorithms", 
+          "patterns": [
+              "Name some sorting algorithms.", 
+              "Tell some of the sorting algorithms.", 
+              "Give some sorting algorithms."
+          ], 
+          "responses": ["Bubble sort,Selection sort,Insertion sort,Quick sort,Merge sort,Heap sort."]
+      }, 
+      {
+          "tag": "selection sort", 
+          "patterns": [
+              "What do you know about selection sort?", 
+              "What is selection sort algorithm?", 
+              "Tell me about selection sort."
+          ], 
+          "responses": ["The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning."]
+      }, 
+      {
+          "tag": "example of selection sort", 
+          "patterns": [
+              "Give me an example of selection sort.", 
+              "An example of selection sort?"
+          ], 
+          "responses": [
+                  "arr[] = 64 25 12 22 11\nFind the minimum element in arr[0...4]\nand place it at beginning\n11 25 12 22 64                 \nFind the minimum element in arr[1...4]\nand place it at beginning of arr[1...4]\n11 12 25 22 64                             \nFind the minimum element in arr[2...4]\nand place it at beginning of arr[2...4]\n11 12 22 25 64                             \nFind the minimum element in arr[3...4]\nand place it at beginning of arr[3...4]\n11 12 22 25 64"
+          ]
+      }, 
+      {
+          "tag": "time complexity of selection sort", 
+          "patterns": [
+              "What is the time complexity of selection sort?", 
+              "Tell me the time complexity of selection sort?"
+          ], 
+          "responses": ["The time complexity of selection sort is O(n^2)."]
+      }, 
+      {
+          "tag": "space complexity of selection sort", 
+          "patterns": [
+              "What is the space complexity of selection sort?", 
+              "Tell me the space complexity of selection sort?"
+          ], 
+          "responses": ["The space complexity of selection sort is O(1)."]
+      }, 
+      {
+          "tag": "bubble sort", 
+          "patterns": [
+              "What do you know about bubble sort?", 
+              "What is bubble sort algorithm?", 
+              "Tell me about bubble sort."
+          ], 
+          "responses": ["Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order."]
+      }, 
+      {
+          "tag": "example of bubble sort", 
+          "patterns": [
+              "Give me an example of bubble sort.", 
+              "An example of bubble sort?"
+          ], 
+          "responses": [
+              "arr[]={5,1,4,2,8}\nFirst Pass:                \n( 5 1 4 2 8 ) -> ( 1 5 4 2 8 ), Here, algorithm compares the first two elements, and swaps since 5 > 1.        \n( 1 5 4 2 8 ) ->  ( 1 4 5 2 8 ), Swap since 5 -> 4                \n( 1 4 5 2 8 ) ->  ( 1 4 2 5 8 ), Swap since 5 -> 2       \n( 1 4 2 5 8 ) -> ( 1 4 2 5 8 ), \nNow, since these elements are already in order (8 -> 5), algorithm does not swap them.\n \nSecond Pass:                \n( 1 4 2 5 8 ) -> ( 1 4 2 5 8 )                \n( 1 4 2 5 8 ) -> ( 1 2 4 5 8 ), Swap since 4 -> 2                \n( 1 2 4 5 8 ) -> ( 1 2 4 5 8 )                \n( 1 2 4 5 8 ) ->  ( 1 2 4 5 8 )                \nNow, the array is already sorted, but our algorithm does not know if it is completed. The algorithm needs one whole pass without any swap to know it is sorted.                \n    \nThird Pass:                \n( 1 2 4 5 8 ) -> ( 1 2 4 5 8 )                \n( 1 2 4 5 8 ) -> ( 1 2 4 5 8 )  \n( 1 2 4 5 8 ) -> ( 1 2 4 5 8 )                \n( 1 2 4 5 8 ) -> ( 1 2 4 5 8 )"
+          ]
+      }, 
+      {
+          "tag": "time complexity of bubble sort", 
+          "patterns": [
+              "What is the time complexity of bubble sort?", 
+              "Tell me the time complexity of bubble sort?"
+          ], 
+          "responses": [
+              "O(n*n). Worst case occurs when array is reverse sorted. O(n). Best case occurs when array is already sorted."]
+      }, 
+      {
+          "tag": "space complexity of bubble sort", 
+          "patterns": [
+              "What is the space complexity of bubble sort?", 
+              "Tell me the space complexity of bubble sort?"
+          ], 
+          "responses": ["The space complexity of bubble sort is O(1)."]
+      }, 
+      {
+          "tag": "insertion sort", 
+          "patterns": [
+              "What do you know about insertion sort?", 
+              "What is insertion sort algorithm?", 
+              "Tell me about insertion sort."
+          ], 
+          "responses": ["Insertion sort is a simple sorting algorithm that works the way we sort playing cards in our hands."]
+      }, 
+      {
+          "tag": "example of insertion sort", 
+          "patterns": [
+              "Give me an example of insertion sort.", 
+              "An example of insertion sort?"
+          ], 
+          "responses": [
+              "12, 11, 13, 5, 6                \nLet us loop for i = 1 (second element of the array) to 4 (last element of the array)                \ni = 1. \nSince 11 is smaller than 12, move 12 and insert 11 before 12           \n11, 12, 13, 5, 6                \ni = 2. \n13 will remain at its position as all elements in A[0..I-1] are smaller than 13    \n11, 12, 13, 5, 6                \ni = 3. \n5 will move to the beginning and all other elements from 11 to 13 will move one position ahead of their current position.   \n5, 11, 12, 13, 6       \ni = 4. \n6 will move to position after 5, and elements from 11 to 13 will move one position ahead of their current position.                \n5, 6, 11, 12, 13"
+          ]
+      }, 
+      {
+          "tag": "time complexity of insertion sort", 
+          "patterns": [
+              "What is the time complexity of insertion sort?", 
+              "Tell me the time complexity of insertion sort?"
+          ], 
+          "responses": [
+              "The time complexity of insertion sort is O(n^2)."]
+      }, 
+      {
+          "tag": "space complexity of insertion sort", 
+          "patterns": [
+              "What is the space complexity of insertion sort?", 
+              "Tell me the space complexity of insertion sort?"
+          ], 
+          "responses": ["The space complexity of insertion sort is O(1)."]
+      }, 
+      {
+          "tag": "merge sort", 
+          "patterns": [
+              "What do you know about merge sort?", 
+              "What is merge sort algorithm?", 
+              "Tell me about merge sort."
+          ], 
+          "responses": ["Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves."]
+      }, 
+      {
+          "tag": "example of merge sort", 
+          "patterns": [
+              "Give me an example of merge sort.", 
+              "An example of merge sort?"
+          ], 
+          "responses": [
+              "Given array is   \n12 11 13 5 6 7       \nSorted array is         \n5 6 7 11 12 13"
+          ]
+      }, 
+      {
+          "tag": "time complexity of merge sort", 
+          "patterns": [
+              "What is the time complexity of merge sort?", 
+              "Tell me the time complexity of merge sort?"
+          ], 
+          "responses": ["The time complexity of merge sort is O(n*logn)."]
+      }, 
+      {
+          "tag": "space complexity of merge sort", 
+          "patterns": [
+              "What is the space complexity of merge sort?", 
+              "Tell me the space complexity of merge sort?"
+          ], 
+          "responses": [
+              "The space complexity of merge sort is O(n)."]
+      }, 
+      {
+          "tag": "quick sort", 
+          "patterns": [
+              "What do you know about quick sort?", 
+              "What is quick sort algorithm?", 
+              "Tell me about quick sort."
+          ], 
+          "responses": ["QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways."]
+      }, 
+      {
+          "tag": "example of quick sort", 
+          "patterns": [
+              "Give me an example of quick sort.", 
+              "An example of quick sort?"
+          ], 
+          "responses": [
+              "arr[] = {10, 80, 30, 90, 40, 50, 70}          \nIndexes:  0   1   2   3   4   5   6        \nlow = 0, high =  6, pivot = arr[h] = 70                \nInitialize index of smaller element, i = -1                \nTraverse elements from j = low to high-1                \nj = 0 : Since arr[j] <= pivot, do i++ and swap(arr[i], arr[j])                \ni = 0                 \narr[] = {10, 80, 30, 90, 40, 50, 70} \n// No change as i and j                                                     \n// are same                j = 1 : Since arr[j] > pivot, do nothing                \n// No change in i and arr[]                j = 2 : Since arr[j] <= pivot, do i++ and swap(arr[i], arr[j])               \ni = 1               \narr[] = {10, 30, 80, 90, 40, 50, 70} // We swap 80 and 30                 j = 3 : Since arr[j] > pivot, do nothing                \n// No change in i and arr[]                j = 4 : Since arr[j] <= pivot, do i++ and swap(arr[i], arr[j])   \ni = 2                \narr[] = {10, 30, 40, 90, 80, 50, 70} // 80 and 40 Swapped                \nj = 5 : Since arr[j] <= pivot, do i++ and swap arr[i] with arr[j]                \ni = 3                \narr[] = {10, 30, 40, 50, 80, 90, 70} // 90 and 50 Swapped                \nWe come out of loop because j is now equal to high-1.                \nFinally we place pivot at correct position by swapping   arr[i+1] and arr[high] (or pivot)                \narr[] = {10, 30, 40, 50, 70, 90, 80} // 80 and 70 Swapped                \nNow 70 is at its correct place. All elements smaller than 70 are before it and all elements greater than 70 are after it."
+]
+    }, 
+    {
+        "tag": "time complexity of quick sort", 
+        "patterns": [
+            "What is the time complexity of quick sort?", 
+            "Tell me the time complexity of quick sort?"
+        ], 
+        "responses": [
+            "The time complexity of quick sort is:-\nWorst Case: O(n^2)\nBest Case/Average Case: O(n*logn)"
+        ]
+    }, 
+    {
+        "tag": "space complexity of quick sort", 
+        "patterns": [
+            "What is the space complexity of quick sort?", 
+            "Tell me the space complexity of quick sort?"
+        ], 
+        "responses": ["The space complexity of quick sort is O(1)."]
+    }, 
+    {
+        "tag": "heap sort", 
+        "patterns": [
+            "What do you know about heap sort?", 
+            "What is heap sort algorithm?", 
+            "Tell me about heap sort."
+        ], 
+        "responses": ["Heap sort is a comparison based sorting technique based on Binary Heap data structure. It is similar to selection sort where we first find the maximum element and place the maximum element at the end. We repeat the same process for remaining element."]
+    }, 
+    {
+        "tag": "example of heap sort", 
+        "patterns": [
+            "Give me an example of heap sort.", 
+            "An example of heap sort?"
+        ], 
+        "responses": [
+            "Input data: 4, 10, 3, 5, 1\n4(0)/10(1)   3(2)/5(3)    1(4)\nThe numbers in bracket represent the indices in the array representation of data.\nApplying heapify procedure to index 1:\n4(0)/10(1)    3(2)/5(3)    1(4)\nApplying heapify procedure to index 0:\n10(0)/5(1)  3(2)/4(3)    1(4)\nThe heapify procedure calls itself recursively to build heap in top down manner."
+        ]
+    }, 
+    {
+        "tag": "time complexity of heap sort", 
+        "patterns": [
+            "What is the time complexity of heap sort?",
+            "Tell me the time complexity of heap sort?"
+        ], 
+        "responses": [
+            "The time complexity of heap sort is:-\nWorst Case: O(n^2)\nBest Case/Average Case: O(n*logn)"
+        ]
+    }, 
+    {
+        "tag": "space complexity of heap sort", 
+        "patterns": [
+            "What is the space complexity of heap sort?", 
+            "Tell me the space complexity of heap sort?"
+        ], 
+        "responses": ["The space complexity of heap sort is O(1)."]
+    }, 
+    {
+        "tag": "pattern searching algorithm", 
+        "patterns": [
+            "What is a pattern searching algorithm?", 
+            "Explain pattern searching algorithm."
+        ], 
+        "responses": ["The Pattern Searching algorithms are sometimes also referred to as String Searching Algorithms and are considered as a part of the String algorithms. These algorithms are useful in the case of searching a string within another string."]
+    }, 
+    {
+        "tag": "some pattern searching algorithms", 
+        "patterns": [
+            "Name some pattern searching algorithms.", 
+            "Tell some of the pattern searching algorithms.", 
+            "Give some pattern searching algorithms."
+        ], 
+        "responses": ["KMP Algorithm,Rabin-Karp Algorithm,Z Algorithm"]
+    }, 
+    {
+        "tag": "KMP algorithm", 
+        "patterns": [
+            "What is KMP Algorithm?", 
+            "Tell me about KMP algorithm.", 
+            "Explain KMP algorithm", 
+            "What do you know about KMP algorithm?"
+        ], 
+        "responses": ["The KMP matching algorithm uses degenerating property (pattern having same sub-patterns appearing more than once in the pattern) of the pattern and improves the worst case complexity to O(n). The basic idea behind KMP's algorithm is: whenever we detect a mismatch (after some matches), we already know some of the characters in the text of the next window. We take advantage of this information to avoid matching the characters that we know will anyway match."]
+    }, 
+    {
+        "tag": "example of KMP algorithm", 
+        "patterns": [
+            "Give me an example of KMP algorithm.", 
+            "An example of KMP algorithm?"
+        ], 
+        "responses": [
+            "Input:-\ntxt[] = ABABDABACDABABCABAB    \npat[] = ABABCABAB      \nOutput:-       \nFound pattern at index 10"
+        ]
+    }, 
+    {
+        "tag": "time complexity of KMP algorithm", 
+        "patterns": ["What is the time complexity of KMP algorithm?", 
+                     "Tell me the time complexity of KMP algorithm?"
+                    ], 
+        "responses": ["The time complexity of KMP algorithm is O(n+m)."]
+    },
+    {
+        "tag": "space complexity of KMP algorithm", 
+        "patterns": ["What is the space complexity of KMP algorithm?", 
+                     "Tell me the space complexity of KMP algorithm?"
+                    ],
+        "responses": ["The space complexity of KMP algorithm is O(m)."]
+    }, 
+    {
+        "tag": "Rabin-Karp algorithm", 
+        "patterns": [
+            "What is Rabin-Karp Algorithm?", 
+            "Tell me about Rabin-Karp algorithm.", 
+            "Explain Rabin-Karp algorithm", 
+            "What do you know about Rabin-Karp algorithm?"
+        ], 
+        "responses": ["Rabin-Karp algorithm slides the pattern one by one. But unlike the Naive algorithm, Rabin Karp algorithm matches the hash value of the pattern with the hash value of current substring of text, and if the hash values match then only it starts matching individual characters. So Rabin Karp algorithm needs to calculate hash values for following strings."]
+    }, 
+    {
+        "tag": "example of Rabin-Karp algorithm", 
+        "patterns": [
+            "Give me an example of Rabin-Karp algorithm.", 
+            "An example of Rabin-Karp algorithm?"
+        ], 
+        "responses": [
+            "Input:-   \ntxt[] = ABABDABACDABABCABAB    \npat[] = ABABCABAB      \nOutput:-   \nFound pattern at index 10"
+        ]
+    }, 
+    {
+        "tag": "time complexity of Rabin-Karp algorithm", 
+        "patterns": [
+            "What is the time complexity of Rabin-Karp algorithm?", 
+            "Tell me the time complexity of Rabin-Karp algorithm?"
+        ], 
+        "responses": [
+            "The average and best case running time of the Rabin-Karp algorithm is O(n+m), but its worst-case time is O(nm).Worst case of Rabin-Karp algorithm occurs when all characters of pattern and text are same as the hash values of all the substrings of txt[] match with hash value of pat[]. For example pat[] = AAA and txt[] = AAAAAAA."]
+    }, 
+    {
+        "tag": "space complexity of Rabin-Karp algorithm", 
+        "patterns": [
+            "What is the space complexity of Rabin-Karp algorithm?", 
+            "Tell me the space complexity of Rabin-Karp algorithm?"
+        ], 
+        "responses": ["The space complexity of Rabin-Karp algorithm is O(m)."]
+    }, 
+    {
+        "tag": "Z algorithm", 
+        "patterns": [
+            "What is Z Algorithm?", 
+            "Tell me about Z algorithm.", 
+            "Explain Z algorithm", 
+            "What do you know about Z algorithm?"
+        ], 
+        "responses": ["This algorithm finds all occurrences of a pattern in a text in linear time. Let length of text be n and of pattern be m, then total time taken is O(m + n) with linear space complexity. In this algorithm, we construct a Z array."]
+    }, 
+    {
+        "tag": "example of Z algorithm", 
+        "patterns": [
+            "Give me an example of Z algorithm.", 
+            "An example of Z algorithm?"
+        ], 
+        "responses": [
+            "Input:-  \ntxt[] = ABABDABACDABABCABAB    \npat[] = ABABCABAB    \nOutput:-    \nFound pattern at index 10"
+        ]
+    }, 
+    {
+        "tag": "time complexity of Z algorithm", 
+        "patterns": [
+            "What is the time complexity of Z algorithm?", 
+            "Tell me the time complexity of Z algorithm?"
+        ], 
+        "responses": ["The time complexity of Z algorithm is O(n+m)."]
+    }, 
+    {
+        "tag": "space complexity of Z algorithm", 
+        "patterns": [
+            "What is the space complexity of Z algorithm?", 
+            "Tell me the space complexity of Z algorithm?"
+        ], 
+        "responses": ["The space complexity of Z algorithm is O(n+m)."]
+    }, 
+    {
+        "tag": "Z Array", 
+        "patterns": [
+            "What is Z Array?", 
+            "Tell me about Z Array.", 
+            "Explain Z Array.", 
+            "What do you know about Z Array?"
+        ], 
+        "responses": ["For a string str[0..n-1], Z array is of same length as string. An element Z[i] of Z array stores length of the longest substring starting from str[i] which is also a prefix of str[0..n-1]. The first entry of Z array is meaning less as complete string is always prefix of itself."]
+    }, 
+    {
+        "tag": "prime sieve algorithm", 
+        "patterns": [
+            "What is prime sieve algorithm?", 
+            "Explain prime sieve.", 
+            "Tell me about prime sieve."
+        ], 
+        "responses": ["The sieve of Eratosthenes is one of the most efficient ways to find all primes smaller than n when n is smaller than 10 million."]
+    }, 
+    {
+        "tag": "time complexity of prime sieve algorithm", 
+        "patterns": [
+            "What is the time complexity of prime sieve algorithm?", 
+            "Tell me the time complexity of prime sieve algorithm?"
+        ], 
+        "responses": ["The time complexity of prime sieve algorithm is O(n*log(log(n)))."]
+    }, 
+    {
+        "tag": "Convex Hull algorithm", 
+        "patterns": [
+            "What is Convex Hull algorithm?", 
+            "Explain Convex Hull.", 
+            "Tell me about Convex Hull."
+        ], 
+        "responses": ["Given a set of points in the plane. the convex hull of the set is the smallest convex polygon that contains all the points of it."]
+    }, 
+    {
+        "tag": "time complexity of Convex Hull algorithm", 
+        "patterns": [
+            "What is the time complexity of Convex Hull algorithm?", 
+            "Tell me the time complexity of Convex Hull algorithm?"
+        ], 
+        "responses": ["The time complexity of Convex Hull algorithm is O(n*Logn)."]
+    }, 
+    {
+        "tag": "Breadth First Search algorithm", 
+        "patterns": [
+            "What is Breadth First Search algorithm?", 
+            "Explain Breadth First Search.", 
+            "Tell me about Breadth First Search."
+        ], 
+        "responses": ["Breadth-first search (BFS) is an algorithm for traversing or searching tree or graph data structures.It uses queue as a data structure for traversing."]
+    }, 
+    {
+        "tag": "time complexity of Breadth First Search algorithm", 
+        "patterns": [
+            "What is the time complexity of Breadth First Search algorithm?", 
+            "Tell me the time complexity of Breadth First Search algorithm?"
+        ], 
+        "responses": ["The time complexity of Breadth First Search algorithm is O(V+E) where V is number of vertices in the graph and E is number of edges in the graph."]
+    }, 
+    {
+        "tag": "space complexity of Breadth First Search algorithm", 
+        "patterns": [
+            "What is the space complexity of Breadth First Search algorithm?", 
+            "Tell me the space complexity of Breadth First Search algorithm?"
+        ], 
+        "responses": ["The space complexity of Breadth First Search algorithm is O(V) where V is number of vertices in the graph."]
+    }, 
+    {
+        "tag": "Depth First Search algorithm", 
+        "patterns": [
+            "What is Depth First Search algorithm?", 
+            "Explain Depth First Search.", 
+            "Tell me about Depth First Search."
+        ], 
+        "responses": ["Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures.It uses stack as a data structure for traversing."]
+    }, 
+    {
+        "tag": "time complexity of Depth First Search algorithm", 
+        "patterns": [
+            "What is the time complexity of Depth First Search algorithm?", 
+            "Tell me the time complexity of Depth First Search algorithm?"
+        ], 
+        "responses": ["The time complexity of Depth First Search algorithm is O(V+E) where V is number of vertices in the graph and E is number of edges in the graph."]
+    }, 
+    {
+        "tag": "space complexity of Depth First Search algorithm", 
+        "patterns": [
+            "What is the space complexity of Depth First Search algorithm?", 
+            "Tell me the space complexity of Depth First Search algorithm?"
+        ], 
+        "responses": ["The space complexity of Depth First Search algorithm is O(V) where V is number of vertices in the graph."]
+    }, 
+    {
+        "tag": "minimum spanning tree", 
+        "patterns": [
+            "What is minimum spanning tree?", 
+            "Explain minimum spanning tree.", 
+            "Tell me about minimum spanning tree."
+        ], 
+        "responses": ["A minimum spanning tree (MST) or minimum weight spanning tree is a subset of the edges of a connected, edge-weighted undirected graph that connects all the vertices together, without any cycles and with the minimum possible total edge weight."]
+    }, 
+    {
+        "tag": "some minimum spanning tree algorithms", 
+        "patterns": [
+            "Name some minimum spanning tree algorithms.", 
+            "Tell some minimum spanning tree algorithms.", 
+            "Give the names of minimum spanning tree algorithms."
+        ], 
+        "responses": ["Prim's Algorithm,Kruskal Algorithm."]
+    }, 
+    {
+        "tag": "prim's algorithm", 
+        "patterns": [
+            "What is prim's algorithm?", 
+            "Explain prim's algorithm.", 
+            "Tell me about prim's algorithm."
+        ], 
+        "responses": ["In Prim's algorithm, two sets are maintained, one set contains list of vertices already included in MST, other set contains vertices not yet included. With adjacency list representation, all vertices of a graph can be traversed in O(V+E) time using BFS. The idea is to traverse all vertices of graph using BFS and use a Min Heap to store the vertices not yet included in MST. Min Heap is used as a priority queue to get the minimum weight edge from the cut. Min Heap is used as time complexity of operations like extracting minimum element and decreasing key value is O(LogV) in Min Heap."]
+    }, 
+    {
+        "tag": "time complexity of prim's algorithm", 
+        "patterns": [
+            "What is the time complexity of prim's algorithm?", 
+            "Tell me the time complexity of prim's algorithm?"
+        ], 
+        "responses": ["Time complexity of prim's algorithm is O(E+V)*O(LogV) which is O((E+V)*LogV) = O(ELogV)."]
+    }, 
+    {
+        "tag": "kruskal's algorithm", 
+        "patterns": [
+            "What is kruskal's algorithm?", 
+            "Explain kruskal's algorithm.", 
+            "Tell me about kruskal's algorithm."
+        ], 
+        "responses": ["The Kruskal's algorithm is a Greedy Algorithm. The Greedy Choice is to pick the smallest weight edge that does not cause a cycle in the MST constructed so far."]
+    }, 
+    {
+        "tag": "time complexity of kruskal's algorithm", 
+        "patterns": [
+            "What is the time complexity of kruskal's algorithm?", 
+            "Tell me the time complexity of kruskal's algorithm?"
+        ], 
+        "responses": ["Time complexity of kruskal's algorithm is O(ELogV)."]
+    }, 
+    {
+        "tag": "dijkstra's algorithm", 
+        "patterns": [
+            "What is dijkstra's algorithm?", 
+            "Explain dijkstra's algorithm.", 
+            "Tell me about dijkstra's algorithm."
+        ],
+        "responses": ["Dijkstra's algorithm (or Dijkstra's Shortest Path First algorithm, SPF algorithm) is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks."]
+    }, 
+    {
+        "tag": "time complexity of dijkstra's algorithm", 
+        "patterns": [
+            "What is the time complexity of dijkstra's algorithm?", 
+            "Tell me the time complexity of dijkstra's algorithm?"
+        ], 
+        "responses": ["Time complexity of dijkstra's algorithm is O(ELogV)."]
+    }, 
+    {
+        "tag": "bellman-ford algorithm", 
+        "patterns": [
+            "What is bellman-ford algorithm?", 
+            "Explain bellman-ford algorithm.", 
+            "Tell me about bellman-ford algorithm."
+        ], 
+        "responses": ["The Bellman-Ford algorithm is an algorithm that computes shortest paths from a single source vertex to all of the other vertices in a weighted digraph. It is slower than Dijkstra's algorithm for the same problem, but more versatile, as it is capable of handling graphs in which some of the edge weights are negative numbers."]
+    }, 
+    {
+        "tag": "time complexity of bellman-ford algorithm", 
+        "patterns": [
+            "What is the time complexity of bellman-ford algorithm?", 
+            "Tell me the time complexity of bellman-ford algorithm?"
+        ], 
+        "responses": ["Time complexity of Bellman-Ford algorithm is O(|V||E|) where |V| is number of vertices and |E| is number of edges."]
+    }, 
+    {
+        "tag": "floyd warshall algorithm", 
+        "patterns": [
+            "What is floyd warshall algorithm?", 
+            "Explain floyd warshall algorithm.", 
+            "Tell me about floyd warshall algorithm."
+        ], 
+        "responses": ["The Floyd Warshall Algorithm is for solving the All Pairs Shortest Path problem. The problem is to find shortest distances between every pair of vertices in a given edge weighted directed Graph."]
+    }, 
+    {
+        "tag": "time complexity of floyd warshall algorithm", 
+        "patterns": [
+            "What is the time complexity of floyd warshall algorithm?", 
+            "Tell me the time complexity of floyd warshall algorithm?"
+        ], 
+        "responses": ["Time complexity of Floyd Warshall algorithm is O(V^3)."]
+    }
+      
+  ]
+}
